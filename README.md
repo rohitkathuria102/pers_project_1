@@ -1,6 +1,6 @@
 # pers_project_1
 CV_project_1
-This is my pers project-1 of classification of various images in 4 classes// CAT,CAR,HUMAN,DOG..
+This is my pers project-1 of classification of various images in 4 classes// CAT,CAR,PERSON,DOG..
 
 
 
@@ -18,14 +18,12 @@ i.e,
 
 FULLY CONNECTED LAYER(HIDDEN)::
 
-from keras.layers import Dense
-classifier1.add(Dense(128,activation='relu'))  // 128 neurons in the hidden layer..
+activation='relu'  // 128 neurons in the hidden layer..
 
 ==>
 OUTPUT LAYER::
 
-classifier.add(Dense(1,activation='softmax'))
+activation='softmax'
 
 
-model.compile( loss='categorical_crossentropy', optimizer=keras.optimizers.SGD(), metrics=[keras.metrics.categorical_accuracy])
 
