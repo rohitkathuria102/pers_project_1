@@ -2,11 +2,11 @@
 
 
 from keras.models import Sequential  ##to initializing a NN..layers or graph
-                                     ##we chose graph
+                                    
 from keras.layers import Convolution2D    #step-1
 from keras.layers import MaxPooling2D     #step-2
 from keras.layers import Flatten          #step-3 flattening
-from keras.layers import Dense            #to add fully connected layers in CNN
+from keras.layers import Dense            #to add fully connected layer/s in CNN
 
 #using tensorflow in backend...what is tensorflow..
 
@@ -65,7 +65,7 @@ classifier.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accurac
     
     
   
- ##image fit into the above CNN built::##to save from overfitting  on the training set..
+ ##image fit into the above CNN built::##to save from overfitting  on the training set..//keras image augmenetation
 
 from keras.preprocessing.image import ImageDataGenerator
 
